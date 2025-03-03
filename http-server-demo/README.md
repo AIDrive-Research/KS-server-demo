@@ -19,13 +19,11 @@
   ```
 
 - 定义三个实例变量：`get_headers_url`、`timeout`、`interval`。
-
-
-<br>
+ 
   ​	`get_headers_url`：指定获取`token`的**URL**地址。
-  
+
   ​	`timeout`：指定获取`token`的超时时间（单位：秒）。
-  
+
   ​	`interval`：定时刷新`headers`的时间间隔（单位：秒）。
   
   ```python
