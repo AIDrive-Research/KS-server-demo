@@ -1,4 +1,3 @@
-package com.github.paicoding.forum.web.front.alert;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping(path = "alert")
+@RequestMapping(path = "")
 public class AlertController {
 
 
@@ -19,7 +18,7 @@ public class AlertController {
      * @param alertMsg
      */
 
-    @PostMapping(path = "/message")
+    @PostMapping(path = "/alert")
     public void getAlertMsg(@RequestBody AlertMsg alertMsg) {
         log.info("示例接收告警及告警图片：{}", alertMsg);
     }
