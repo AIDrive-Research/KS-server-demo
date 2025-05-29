@@ -1,7 +1,9 @@
 ## 一、功能概述
 
 `Api` 类是一个用于处理检测结果、告警信息和告警视频的工具类。
+
 [api_demo.py](api_demo.py) 为原始默认实现。
+
 [api_demo_tcp.py](api_demo_tcp.py)实现最简单的tcp通讯，如果需要自动重连，队列等业务代码请自行实现。
 
 
