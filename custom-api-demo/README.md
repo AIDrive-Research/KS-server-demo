@@ -1,6 +1,9 @@
 ## 一、功能概述
 
 `Api` 类是一个用于处理检测结果、告警信息和告警视频的工具类。
+[api_demo.py](api_demo.py) 为原始默认实现。
+[api_demo_tcp.py](api_demo_tcp.py)实现最简单的tcp通讯，如果需要自动重连，队列等业务代码请自行实现。
+
 
 此类名、方法名等框架是固定的，不可修改。你可以通过实现回调方法的具体逻辑（如 `send_result_callback`、`send_alert_callback` 和 `send_alert_video_callback`）以及配置类的属性（如 `ignore_result`、`ignore_alert` 等）来实现具体功能。
 
@@ -162,4 +165,5 @@
 
 1. **属性配置**：在调用发送方法之前，确保已经正确配置了类的属性，以启用或禁用所需的功能。
 2. **方法实现**：默认情况下，`send_result_callback`、`send_alert_callback` 和 `send_alert_video_callback` 方法是空方法。在实际使用中，需要根据具体需求实现这些方法的逻辑，例如将数据发送到服务器。
+
 
